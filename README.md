@@ -23,8 +23,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Anjie-MF/FEM_productPreviewCard_figmaChallenge)
+- Live Site URL: [GitHub Pages]( https://anjie-mf.github.io/FEM_productPreviewCard_figmaChallenge/)
 
 ## My process
 
