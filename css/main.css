@@ -1,0 +1,245 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@media only screen and (min-width: 320px) {
+
+    body {
+        background-color: rgb(242, 234, 226);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-component {
+        background-color: rgb(255, 255, 255);
+        padding-bottom: 32px;
+    }
+
+    .text-container {
+        margin: 32px;
+    }
+
+    .fancy-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 120%;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #6C7289;
+    }
+
+    h1 {
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 100%;
+    }
+
+    .text-container p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 160%;
+        color: #6C7289;
+        margin-bottom: 24px;
+    }
+
+    .sale-container {
+        margin: 32px 32px 32px 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sale-container p {
+        font-family: "Fraunces";
+        font-weight: 900;
+        font-size: 2rem;
+        line-height: 100%;
+        color: #3D8168;
+    }
+
+    .sale-container s {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 120%;
+        color: #6C7289;
+        padding: 24px 0px 0px 16px;
+    }
+
+    .add-to-cart {
+        background-color: #1A4032;
+        border-radius: 8px;
+        padding: 32px 16px;
+        margin: 32px;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 1rem;
+        line-height: 110%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .add-to-cart:hover {
+        background-color: #3D8168;
+        font-size: 1rem;
+    }
+
+    .cart-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+/* =======================================================
+             DESKTOP STYLES
+   ======================================================= */
+
+@media only screen and (min-width: 768px) {
+
+    .card-component {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0;
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 900px;
+        width: 90%;
+        margin: 32px;
+        padding-bottom: 0px;
+    }
+
+    .img-container img {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .fancy-title {
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 24px;
+    }
+
+    .text-container p {
+        font-size: 1.125rem;
+    }
+
+    .sale-container p {
+        font-size: 2.125rem;
+
+    }
+
+    .sale-container s {
+        font-size: 0.875rem;
+    }
+
+    .add-to-cart {
+        font-size: 1.5rem;
+    }
+}
